@@ -1,0 +1,15 @@
+{
+  "thread_info" : [
+    {
+      "name": "helloThread01",
+      "func_proto": "static void * helloThread01(void *)"
+    },
+    {
+      "name": "helloThread02",
+      "func_proto": "static void * helloThread02(void *)"
+    },
+    {
+
+    }
+  ]
+}
