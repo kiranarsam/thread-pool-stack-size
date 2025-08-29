@@ -4,8 +4,7 @@ __pycache__/
 *$py.class
 
 # output folders
-data/su/
-data/graph/
+data/
 
 # C extensions
 *.so

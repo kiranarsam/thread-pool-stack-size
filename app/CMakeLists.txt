@@ -3,6 +3,8 @@
 add_executable(hello
   "helloworld.cpp"
   "sample.cpp"
+  "display.cpp"
+  "lcddisplay.cpp"
 )
 
 target_include_directories(hello
@@ -36,4 +38,12 @@ file(GLOB GRAPH_FILES LIST_DIRECTORIES false
 
 install(FILES ${GRAPH_FILES}
   DESTINATION "${CMAKE_INSTALL_PREFIX}/graph"
+)
+
+file(GLOB CGRAPH_FILES LIST_DIRECTORIES false
+  "${CMAKE_CURRENT_BINARY_DIR}/CMakeFiles/hello.dir/*.cgraph"
+)
+
+install(FILES ${CGRAPH_FILES}
+  DESTINATION "${CMAKE_INSTALL_PREFIX}/cgraph"
 )

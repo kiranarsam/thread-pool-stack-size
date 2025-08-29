@@ -1,5 +1,6 @@
 #include <iostream>
 #include "sample.hpp"
+#include "lcddisplay.hpp"
 
 static void hi(void *arg)
 {
@@ -26,12 +27,20 @@ void processSample(Sample &sample)
   sample.printSample();
 }
 
+void processDisplay(Display &display)
+{
+  display.showScreen();
+}
+
 
 int main(int argc, char**argv)
 {
   Sample sam(32);
   processSample(sam);
   greet();
+
+  LcdDisplay ld;
+  processDisplay(ld);
 
   return 0;
 }
